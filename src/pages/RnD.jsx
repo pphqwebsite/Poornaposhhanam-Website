@@ -34,7 +34,7 @@ export default function RnD() {
 
       {/* Download Button */}
       <div className="download-section">
-        <a href="/public/profile/profile.pdf" download className="download-button">
+        <a href="/profile/profile.pdf" download className="download-button">
           Download R&D Profile
         </a>
       </div>

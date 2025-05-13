@@ -8,7 +8,7 @@ export default function About() {
 
       {/* Download Button */}
       <div className="download-section">
-        <a href="/public/profile/profile.pdf" download className="download-button">
+        <a href="/profile/profile.pdf" download className="download-button">
           Download our Brochure
         </a>
       </div>

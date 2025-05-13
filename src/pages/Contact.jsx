@@ -6,6 +6,11 @@ export default function Contact() {
       <h1>Contact Us</h1>
       <p>We welcome your queries and feedback. Please reach out to us through any of the contact points listed below.</p>
 
+      <h3>General Contact</h3>
+      <p>
+        Email: <a href="mailto:office@ppfhq.in">office@ppfhq.in</a>
+      </p>
+
       <h3>Head Office</h3>
       <p>
         Poornaposhanam Foundation<br />
@@ -30,11 +35,6 @@ export default function Contact() {
         Poornaposhanam Foundation<br />
         Meerut (U.P.)<br />
         India
-      </p>
-
-      <h3>General Contact</h3>
-      <p>
-        Email: <a href="mailto:office@ppfhq.in">office@ppfhq.in</a>
       </p>
 
       <h3>Account Details</h3>

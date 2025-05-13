@@ -17,24 +17,33 @@ export default function Home() {
 
       <section className="section-class">
         <h1>Welcome to Poornaposhhanam Foundation</h1>
-        <p>Empowering change through education, research, and collaboration.</p>
+        <p>Driving sustainable development through knowledge, innovation, and community engagement.</p>
+
+        <h3>News & Events</h3>
+<div className="news-marquee">
+  <div className="marquee-content">
+    <span className="news-item">• Research partnership signed with IIT-BHU to study rural nutrition trends.</span>
+    <span className="news-item">• Poornaposhhanam hosts seminar on Climate-Resilient Farming in Varanasi.</span>
+    <span className="news-item">• Annual Community Health Survey begins across 3 districts this July.</span>
+    <span className="news-item">• Educational outreach program launched for underprivileged school children.</span>
+    <span className="news-item">• Foundation Day Celebration planned for August 2025 with guest lectures.</span>
+    <span className="news-item">• Publication of white paper on Holistic Rural Development now available.</span>
+  </div>
+</div>
+
+
 
         <h3>Become a Member</h3>
-        <p>Join our network and be a part of impactful global and local initiatives.</p>
+        <p>Join our network to support sustainable change through education, health, and research.</p>
         <a href="https://forms.gle/membership-form" target="_blank" rel="noopener noreferrer">Membership Form</a>
 
         <h3>Volunteer With Us</h3>
-        <p>Get involved in our projects and initiatives by volunteering your time and skills.</p>
+        <p>Contribute your time and skills to grassroots initiatives making real-world impact.</p>
         <a href="https://forms.gle/volunteer-form" target="_blank" rel="noopener noreferrer">Volunteer Form</a>
 
-        <h3>News & Events</h3>
-        <ul>
-          <li>Workshop on Sustainable Agriculture - July 2025</li>
-          <li>Webinar: AI for Social Good - August 2025</li>
-        </ul>
-
-        <h3>Social and Global Impact</h3>
-        <p>Our programs have reached over 20,000 beneficiaries across 12 countries.</p>
+        <h3>Donate for the Cause</h3>
+        <p>Support our mission to uplift communities through targeted, high-impact interventions.</p>
+        <a href="https://forms.gle/volunteer-form" target="_blank" rel="noopener noreferrer">Donation Form</a>
       </section>
     </div>
   );

@@ -6,6 +6,13 @@ export default function About() {
       <h1>About Us</h1>
       <p>Poornaposhhanam Foundation is a non-profit, research-driven organization dedicated to the holistic well-being of individuals and communities. We integrate nutrition, spirituality, and ancient Vedic sciences to promote sustainable and healthy lifestyles. Through various courses, trainings, and research initiatives, we strive to empower people globally to achieve balanced health of body, mind, and soul.</p>
 
+      {/* Download Button */}
+      <div className="download-section">
+        <a href="/public/profile/profile.pdf" download className="download-button">
+          Download our Brochure
+        </a>
+      </div>
+
       <h2>Vision & Mission</h2>
       <p><b>Vision: </b>To promote a harmonious existence through the integration of right knowledge, nutrition, and spiritual practices, leading to healthier and more productive lives.</p>
       <p><b>Mission: </b>To empower individuals and communities by promoting holistic health, nutrition, and well-being, while blending ancient wisdom with modern scientific practices for sustainable growth.</p>
@@ -74,6 +81,8 @@ export default function About() {
       <p><i>Research & Development</i></p>
       <p><i>Administrative Office</i></p>
       <p><i>Operational Teams</i></p>
+
+      
     </section>
   );
 }

@@ -11,6 +11,7 @@ import Publications from './pages/Publications';
 import RnD from './pages/RnD';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
+import Training from './pages/Training';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/courses" element={<Courses />} />
-            <Route path="/training" element={<Courses />} />
+            <Route path="/training" element={<Training />} />
             <Route path="/publications" element={<Publications />} />
             <Route path="/rnd" element={<RnD />} />
             <Route path="/faq" element={<FAQ />} />

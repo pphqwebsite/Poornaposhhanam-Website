@@ -215,6 +215,10 @@ h1, h2, h3 {
   color: #1e3d2f;
 }
 
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
 .news-item {
   margin: 0 1rem;
   display: inline-block;
@@ -231,7 +235,7 @@ h1, h2, h3 {
 
 /* Download Button */
 .download-section {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .download-button {

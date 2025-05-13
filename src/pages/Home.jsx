@@ -35,15 +35,15 @@ export default function Home() {
 
         <h3>Become a Member</h3>
         <p>Join our network to support sustainable change through education, health, and research.</p>
-        <a href="https://forms.gle/membership-form" target="_blank" rel="noopener noreferrer">Membership Form</a>
+        <a href="https://forms.gle/sRS8aRrbL7xSV2WA8" target="_blank" rel="noopener noreferrer">Membership Form</a>
 
         <h3>Volunteer With Us</h3>
         <p>Contribute your time and skills to grassroots initiatives making real-world impact.</p>
-        <a href="https://forms.gle/volunteer-form" target="_blank" rel="noopener noreferrer">Volunteer Form</a>
+        <a href="https://forms.gle/BDsxt9V1NNqjbkGg7" target="_blank" rel="noopener noreferrer">Volunteer Form</a>
 
         <h3>Donate for the Cause</h3>
         <p>Support our mission to uplift communities through targeted, high-impact interventions.</p>
-        <a href="https://forms.gle/volunteer-form" target="_blank" rel="noopener noreferrer">Donation Form</a>
+        <a href="https://forms.gle/JRoa2icHPn78foHE6" target="_blank" rel="noopener noreferrer">Donation Form</a>
       </section>
     </div>
   );

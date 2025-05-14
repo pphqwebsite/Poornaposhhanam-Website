@@ -8,13 +8,14 @@ img {
   height: auto;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  font-family: 'Palanquin', sans-serif;
+  font-family: "Palanquin", sans-serif;
   background-color: #f7fff7;
   color: #1e3d2f;
 }
@@ -23,7 +24,9 @@ h1 {
   font-size: 250%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 5%;
 }
 
@@ -79,7 +82,7 @@ h1, h2, h3 {
 }
 
 .org-name-link {
-  font-family: 'Tagesschrift', system-ui;
+  font-family: "Tagesschrift", system-ui;
   font-weight: 700;
   font-size: 2.2rem;
   color: #000000;
@@ -121,7 +124,7 @@ h1, h2, h3 {
 .nav-tabs a {
   color: #1e3d2f;
   text-decoration: none;
-  font-family: 'Palanquin', sans-serif;
+  font-family: "Palanquin", sans-serif;
   font-weight: 500;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -248,7 +251,7 @@ h1, h2, h3 {
     font-size: 1.6rem;
   }
 
-   .dropdown-menu {
+  .dropdown-menu {
     position: static;
     box-shadow: none;
     background-color: transparent;

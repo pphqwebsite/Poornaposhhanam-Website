@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 export default function ImageCarousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,14 +16,8 @@ export default function ImageCarousel({ images }) {
   };
 
   return (
-    <div
-      className="image-carousel"
-      onClick={handleImageClick}
-    >
-      <img
-        src={images[currentIndex]}
-        alt="carousel"
-      />
+    <div className="image-carousel" onClick={handleImageClick}>
+      <img src={images[currentIndex]} alt="carousel" />
     </div>
   );
 }

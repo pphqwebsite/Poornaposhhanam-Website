@@ -87,7 +87,7 @@ export default function Home() {
           health, and research.
         </p>
         <a
-          href="https://forms.gle/sRS8aRrbL7xSV2WA8"
+          href="https://surveyheart.com/form/68261408543db626e9311825"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -100,7 +100,7 @@ export default function Home() {
           real-world impact.
         </p>
         <a
-          href="https://forms.gle/BDsxt9V1NNqjbkGg7"
+          href="https://surveyheart.com/form/682618c7f2248a26abd073d7"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -113,7 +113,7 @@ export default function Home() {
           high-impact interventions.
         </p>
         <a
-          href="https://forms.gle/JRoa2icHPn78foHE6"
+          href="https://surveyheart.com/form/68261ab5f061e226ef54ef0f"
           target="_blank"
           rel="noopener noreferrer"
         >

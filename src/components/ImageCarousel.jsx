@@ -6,18 +6,23 @@ export default function ImageCarousel({ images }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+    }, 5000);
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval);
   }, [images.length]);
 
   const handleImageClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Change image on click
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
+  const [imageSrc, imageDescription] = images[currentIndex];
+
   return (
-    <div className="image-carousel" onClick={handleImageClick}>
-      <img src={images[currentIndex]} alt="carousel" />
-    </div>
+    <>
+      <div className="image-carousel" onClick={handleImageClick}>
+        <img src={imageSrc} alt={`Slide ${currentIndex + 1}`} />
+      </div>
+      <p className="image-description">{imageDescription}</p>
+    </>
   );
 }

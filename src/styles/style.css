@@ -389,3 +389,11 @@ h3 {
     z-index: 3001;
   }
 }
+
+.image-description {
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #2f4f4f;
+}

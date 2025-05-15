@@ -3,11 +3,25 @@ import ImageCarousel from "../components/ImageCarousel"; // Import the ImageCaro
 
 export default function Home() {
   const images = [
-    "/home-carousel/1.jpg",
-    "/home-carousel/2.jpeg",
-    "/home-carousel/3.jpg",
-    "/home-carousel/4.jpg",
-    "/home-carousel/5.jpeg",
+    ["/home-carousel/archery.jpeg", "Archery at the Sports Science Center"],
+    ["/home-carousel/exercise.jpeg", "Workout at the Sports Science Center"],
+    [
+      "/home-carousel/gurukul.jpeg",
+      "Distribution of educational study material to promote & support gurukul education (2025)",
+    ],
+    [
+      "/home-carousel/promote-2.jpeg",
+      "Mountain Hiking Initiative To Promote Sports specific health with fun among youth (2024)",
+    ],
+    ["/home-carousel/sports.jpeg", "Activity at the Sports Science Center"],
+    [
+      "/home-carousel/workshop.jpeg",
+      "Bagwani with Gurukul - Hands-on-Workshop on Ayurvedic Nutrition for students",
+    ],
+    [
+      "/home-carousel/promote.jpeg",
+      "Mountain Hiking Initiative To Promote Sports specific health with fun among youth (2024)",
+    ],
   ];
 
   return (

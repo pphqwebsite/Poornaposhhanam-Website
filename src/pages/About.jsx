@@ -202,33 +202,12 @@ export default function About() {
       </ul>
 
       <h2>Organisational Structure</h2>
-      <p>
-        <i>Founder, CEO & Director: </i>Dr. Kanishka Singh
-      </p>
-      <p>
-        <i>Executive Advisory Board</i>
-      </p>
-      <p>
-        <i>Scientific Advisory Board</i>
-      </p>
-      <p>
-        <i>Scientific Advisory Board</i>
-      </p>
-      <p>
-        <i>General Advisory Board</i>
-      </p>
-      <p>
-        <i>Departments</i>
-      </p>
-      <p>
-        <i>Research & Development</i>
-      </p>
-      <p>
-        <i>Administrative Office</i>
-      </p>
-      <p>
-        <i>Operational Teams</i>
-      </p>
+      <div>
+        <img src="/structure.jpg" alt="Organisational Structure" />
+        <p className="image-description">
+          Poornaposhhanam Foundation – Organisational Structure
+        </p>
+      </div>
     </section>
   );
 }

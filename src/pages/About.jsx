@@ -4,7 +4,7 @@ import PeopleDisplay from "../components/PeopleDisplay";
 export default function About() {
   const collaborators = [
     ["/people/raj.jpeg", "Shri Raj Rajeshwari Ved Pathshala"],
-    ["/people/raj2.jpeg", "Ms. Arpi Shah"],
+    ["/people/arpi.jpeg", "Ms. Arpi Shah"],
   ];
 
   return (

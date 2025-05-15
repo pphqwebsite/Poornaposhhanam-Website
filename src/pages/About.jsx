@@ -1,6 +1,12 @@
 import React from "react";
+import PeopleDisplay from "../components/PeopleDisplay";
 
 export default function About() {
+  const collaborators = [
+    ["/people/raj.jpeg", "Shri Raj Rajeshwari Ved Pathshala"],
+    ["/people/raj2.jpeg", "Ms. Arpi Shah"],
+  ];
+
   return (
     <section className="section-class">
       <h1>About Us</h1>
@@ -19,6 +25,9 @@ export default function About() {
           Download our Brochure
         </a>
       </div>
+
+      <h2>Collaborators</h2>
+      <PeopleDisplay people={collaborators} />
 
       <h2>Vision & Mission</h2>
       <p>

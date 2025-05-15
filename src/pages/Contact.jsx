@@ -67,7 +67,7 @@ export default function Contact() {
         <br />
         Account Number: 50200109979083
         <br />
-        IFSC Code: [Insert IFSC Code]
+        IFSC Code: HDFC0001465
         <br />
         Branch: Varanasi (U.P.)
         <br />

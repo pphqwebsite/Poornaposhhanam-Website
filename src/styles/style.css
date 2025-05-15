@@ -397,3 +397,21 @@ h3 {
   text-align: center;
   color: #2f4f4f;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+td {
+  padding: 0.8rem 1rem;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+}
+
+td:first-child {
+  font-weight: 600;
+  width: 30%;
+  white-space: nowrap;
+}

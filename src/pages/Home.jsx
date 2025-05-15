@@ -4,7 +4,10 @@ import ImageCarousel from "../components/ImageCarousel"; // Import the ImageCaro
 export default function Home() {
   const images = [
     ["/home-carousel/archery.jpeg", "Archery at the Sports Science Center"],
-    ["/home-carousel/exercise.jpeg", "Workout at the Sports Science Center"],
+    [
+      "/home-carousel/exercise.jpeg",
+      "Sports Authority of India (Chh. Sambhajinagar, Maharashtra) Visit and Practical Training on Sports specific exercises for Nutrition Students (2024)",
+    ],
     [
       "/home-carousel/gurukul.jpeg",
       "Distribution of educational study material to promote & support gurukul education (2025)",
@@ -22,6 +25,18 @@ export default function Home() {
       "/home-carousel/promote.jpeg",
       "Mountain Hiking Initiative To Promote Sports specific health with fun among youth (2024)",
     ],
+    // [
+    //   "/home-carousel/ved.jpeg",
+    //   "Ved Parayan by Rig Veda, Shukla Yajurveda, Sam veda and Atharva Veda Expert - 2024",
+    // ],
+    // [
+    //   "/home-carousel/deep.jpeg",
+    //   "Deep Prajwalan on Dev Deepavali at Varanasi Ghat (2024)",
+    // ],
+    // [
+    //   "/home-carousel/durga.jpeg",
+    //   "Maa Lalita Shahatrarchan, Lolark Kund, Mahishasur Mardni Temple, Varanasi (2024)",
+    // ],
   ];
 
   return (

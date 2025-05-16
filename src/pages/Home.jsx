@@ -6,15 +6,15 @@ export default function Home() {
     ["/home-carousel/archery.jpeg", "Archery at the Sports Science Center"],
     [
       "/home-carousel/exercise.jpeg",
-      "Sports Authority of India (Chh. Sambhajinagar, Maharashtra) Visit and Practical Training on Sports specific exercises for Nutrition Students (2024)",
+      "Sports Authority of India (Chh. Sambhajinagar, Maharashtra) Visit and Practical Training on Sports specific exercises for Nutrition Students",
     ],
     [
       "/home-carousel/gurukul.jpeg",
-      "Distribution of educational study material to promote & support gurukul education (2025)",
+      "Distribution of educational study material to promote & support gurukul education",
     ],
     [
       "/home-carousel/promote-2.jpeg",
-      "Mountain Hiking Initiative To Promote Sports specific health with fun among youth (2024)",
+      "Mountain Hiking Initiative To Promote Sports specific health with fun among youth",
     ],
     ["/home-carousel/sports.jpeg", "Activity at the Sports Science Center"],
     [
@@ -23,7 +23,11 @@ export default function Home() {
     ],
     [
       "/home-carousel/promote.jpeg",
-      "Mountain Hiking Initiative To Promote Sports specific health with fun among youth (2024)",
+      "Mountain Hiking Initiative To Promote Sports specific health with fun among youth",
+    ],
+    [
+      "/home-carousel/anemia.jpeg",
+      "Hands-on-training cum Awareness Program conducted in School on 'Prevention & Management of Malnutrition & Anemia in young children'",
     ],
     // [
     //   "/home-carousel/ved.jpeg",

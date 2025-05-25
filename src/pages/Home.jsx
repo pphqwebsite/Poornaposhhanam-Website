@@ -66,19 +66,21 @@ export default function Home() {
         </p>
 
         <ImageDisplay people={logos} simpleDisplay={true} />
+        
+        <div className="cin-number">CIN Number: XXXXXXXXXXXXX</div>
 
         <div className="message-section">
           <h2>Founder's Message</h2>
           <div className="message-content">
             <p>
-              At Poornaposhhanam Foundation, we believe in the power of holistic development that combines ancient wisdom with modern scientific approaches. Our journey began with a vision to create sustainable change through education, research, and community engagement.
+              As the Founder-CEO, I welcome you to Poornaposhhanam Foundation. Our foundation believes in "Prajñānam Brahma" - knowledge as the path to ultimate truth. In these transformative times, when Bharat is emerging as a global leader, we are dedicated to re-establishing our deep-rooted culture and ancient Vedic knowledge systems.
             </p>
             <p>
-              We are committed to empowering individuals and communities by promoting health, nutrition, and spiritual well-being. Through our various initiatives, we aim to bridge the gap between traditional knowledge and contemporary practices, creating a harmonious balance for sustainable growth.
+              Despite being a young organization, we have made significant impact through our scientifically-driven vision and practices. Our experienced team works with dedication and resilience, creating an environment that fosters sustainable growth and positive change. We continue our journey with a strong commitment to scientific work and the Sanatan knowledge system, driving impactful social, academic, and sustainable changes across the nation and globe.
             </p>
             <div className="message-signature">
-              - Dr. Bechan Sharma<br />
-              Founder, Poornaposhhanam Foundation
+              - Dr. Knishka Siingh<br />
+              Founder & CEO, Poornaposhhanam Foundation
             </div>
           </div>
         </div>
@@ -87,13 +89,13 @@ export default function Home() {
           <h2>Director's Message</h2>
           <div className="message-content">
             <p>
-              As we move forward in our mission, we remain focused on creating meaningful impact through research-driven initiatives and community-based programs. Our commitment to excellence and innovation drives us to continuously explore new avenues for sustainable development.
+              Welcome to Poornaposhhanam Foundation – Pragyanam Bhram, an organization dedicated to complete nourishment of body, mind, and soul. In this era of modern science and AI, we focus on blending ancient Vedic knowledge with contemporary scientific approaches to enhance biodiversity and human development.
             </p>
             <p>
-              We invite you to join us in this journey of transformation, where together we can create a healthier, more sustainable future for generations to come. Your support and participation are invaluable in helping us achieve our vision of holistic well-being for all.
+              As the first not-for-profit organization connecting Aerospace Nutrition and Cosmology with food, nutrition, and spirituality, we offer various courses, trainings, and research opportunities. Our foundation works at grassroots levels, from regular Ved-Parayan to practical exposure in sports and space nutrition, promoting innovations rooted in Indian knowledge systems.
             </p>
             <div className="message-signature">
-              - Dr. Anand Kumar Tripathi<br />
+              - Acharya Shivam<br />
               Director, Poornaposhhanam Foundation
             </div>
           </div>

@@ -2,14 +2,21 @@ import React from "react";
 import ImageDisplay from "../components/ImageDisplay";
 
 export default function About() {
+  const hasNonDummyImages = (people) => {
+    return people.some(person => {
+      const imagePath = Array.isArray(person) ? person[0] : person;
+      return !imagePath.includes('dummy');
+    });
+  };
+
   const collaborators = [
     ["/people/raj.jpeg", "Shri Raj Rajeshwari Ved Pathshala"],
     ["/people/arpi.jpeg", "Ms. Arpi Shah"],
   ];
 
   const researchCollaborators = [
-    ["/people/raj.jpeg", "Shri Raj Rajeshwari Ved Pathshala"],
-    ["/people/arpi.jpeg", "Ms. Arpi Shah"],
+    ["/people/dummy.jpeg", "-"],
+    ["/people/dummy.jpeg", "-"],
   ];
 
   const ppfExecutiveCommittee = [
@@ -57,11 +64,19 @@ export default function About() {
         </a>
       </div>
 
-      <h2>Collaborators</h2>
-      <ImageDisplay people={collaborators} />
+      {hasNonDummyImages(collaborators) && (
+        <>
+          <h2>Collaborators</h2>
+          <ImageDisplay people={collaborators} />
+        </>
+      )}
 
-      {/* <h2>Research Collaborators</h2>
-      <ImageDisplay people={researchCollaborators} /> */}
+      {hasNonDummyImages(researchCollaborators) && (
+        <>
+          <h2>Research Collaborators</h2>
+          <ImageDisplay people={researchCollaborators} />
+        </>
+      )}
 
       <h2>Vision & Mission</h2>
       <p>
@@ -116,17 +131,33 @@ export default function About() {
           changes through research, education, and community outreach.
         </p>
 
-        {/* <h2>PPF Executive Committee</h2> */}
-        {/* <ImageDisplay people={ppfExecutiveCommittee} /> */}
+        {hasNonDummyImages(ppfExecutiveCommittee) && (
+          <>
+            <h2>PPF Executive Committee</h2>
+            <ImageDisplay people={ppfExecutiveCommittee} />
+          </>
+        )}
 
-        <h2>Executive Advisory Board</h2>
-        <ImageDisplay people={executiveBoard} />
+        {hasNonDummyImages(executiveBoard) && (
+          <>
+            <h2>Executive Advisory Board</h2>
+            <ImageDisplay people={executiveBoard} />
+          </>
+        )}
 
-        <h2>R&D Advisory Board</h2>
-        <ImageDisplay people={rndBoard} />
+        {hasNonDummyImages(rndBoard) && (
+          <>
+            <h2>R&D Advisory Board</h2>
+            <ImageDisplay people={rndBoard} />
+          </>
+        )}
 
-        <h2>Expert Panel</h2>
-        <ImageDisplay people={expertPanel} />
+        {hasNonDummyImages(expertPanel) && (
+          <>
+            <h2>Expert Panel</h2>
+            <ImageDisplay people={expertPanel} />
+          </>
+        )}
 
         <h2>Departments</h2>
         <ul>

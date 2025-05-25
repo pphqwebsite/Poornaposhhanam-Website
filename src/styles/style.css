@@ -347,20 +347,133 @@ h3 {
 }
 
 /* IMAGE CAROUSEL */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .image-carousel {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 80vh;
-  overflow: hidden;
+  min-height: 70vh;
+  overflow: visible;
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
 
-.image-carousel img {
+.carousel-image-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #1e3d2f;
+  font-size: 1.2rem;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.carousel-nav:hover {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-nav.prev {
+  left: 20px;
+}
+
+.carousel-nav.next {
+  right: 20px;
+}
+
+.carousel-progress {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.progress-bar {
   height: 100%;
-  object-fit: cover;
+  background: #1e3d2f;
+  transition: width 0.05s linear;
+}
+
+.image-description {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #1e3d2f;
+  font-size: 1.2rem;
+  padding: 10px;
+  background: white;
+  margin: 0;
+  z-index: 2;
+  border-top: 1px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .image-carousel {
+    min-height: 50vh;
+  }
+
+  .carousel-image {
+    max-height: 50vh;
+  }
+
+  .carousel-nav {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .carousel-nav.prev {
+    left: 10px;
+  }
+
+  .carousel-nav.next {
+    right: 10px;
+  }
+
+  .image-description {
+    font-size: 1rem;
+    padding: 8px;
+  }
 }
 
 /* NEWS MARQUEE */
@@ -442,14 +555,6 @@ h3 {
     color: #1e3d2f;
     z-index: 3001;
   }
-}
-
-.image-description {
-  margin-top: 0.5rem;
-  font-style: italic;
-  font-size: 1.1rem;
-  text-align: center;
-  color: #2f4f4f;
 }
 
 table {

@@ -21,7 +21,7 @@ export default function Home() {
       "/home-carousel/promote-2.jpeg",
       "Mountain Hiking Initiative To Promote Sports specific health with fun among youth",
     ],
-    ["/home-carousel/sports.jpeg", "Activity at the Sports Science Center"],
+    ["/home-carousel/sports.jpeg", "PPF team visit at India's 2nd largest sports training campus - Sports Authority of India"],
     [
       "/home-carousel/workshop.jpeg",
       "Bagwani with Gurukul - Hands-on-Workshop on Ayurvedic Nutrition for students",

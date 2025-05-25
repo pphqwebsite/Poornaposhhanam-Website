@@ -1,7 +1,7 @@
 import React from "react";
 import ImageCarousel from "../components/ImageCarousel"; // Import the ImageCarousel component
 import ImageDisplay from "../components/ImageDisplay";
-import MarqueeComponent from "../components/MarqueeComponent";
+import NewsDisplay from "../components/NewsDisplay";
 
 export default function Home() {
   const images = [
@@ -49,12 +49,7 @@ export default function Home() {
   ];
 
   const newsItems = [
-    "Research partnership signed with IIT-BHU to study rural nutrition trends.",
-    "Poornaposhhanam hosts seminar on Climate-Resilient Farming in Varanasi.",
-    "Annual Community Health Survey begins across 3 districts this July.",
-    "Educational outreach program launched for underprivileged school children.",
-    "Foundation Day Celebration planned for August 2025 with guest lectures.",
-    "Publication of white paper on Holistic Rural Development now available."
+    
   ];
 
   return (
@@ -69,7 +64,7 @@ export default function Home() {
           community engagement.
         </p>
 
-        <div className="cin-number">CIN Number: XXXXXXXXXXXXX</div>
+        <div className="cin-number">CIN Number: U88900UP2024NPL210722</div>
 
         <div className="message-section">
           <h2>Founder's Message</h2>
@@ -103,8 +98,12 @@ export default function Home() {
           </div>
         </div>
 
-        <h3>News & Events</h3>
-        <MarqueeComponent items={newsItems} />
+        {newsItems.length > 0 && (
+          <>
+            <h3>News & Events</h3>
+            <NewsDisplay items={newsItems} />
+          </>
+        )}
 
         <h3>Become a Member</h3>
         <p>

@@ -7,6 +7,11 @@ export default function About() {
     ["/people/arpi.jpeg", "Ms. Arpi Shah"],
   ];
 
+  const researchCollaborators = [
+    ["/people/raj.jpeg", "Shri Raj Rajeshwari Ved Pathshala"],
+    ["/people/arpi.jpeg", "Ms. Arpi Shah"],
+  ];
+
   const ppfExecutiveCommittee = [
     ["/people/dummy.jpeg", "Dummy Name 1", "Dummy Position 1"],
     ["/people/dummy.jpeg", "Dummy Name 2", "Dummy Position 2"],
@@ -54,6 +59,9 @@ export default function About() {
 
       <h2>Collaborators</h2>
       <ImageDisplay people={collaborators} />
+
+      {/* <h2>Research Collaborators</h2>
+      <ImageDisplay people={researchCollaborators} /> */}
 
       <h2>Vision & Mission</h2>
       <p>
@@ -108,8 +116,8 @@ export default function About() {
           changes through research, education, and community outreach.
         </p>
 
-        <h2>PPF Executive Committee</h2>
-        <ImageDisplay people={ppfExecutiveCommittee} />
+        {/* <h2>PPF Executive Committee</h2> */}
+        {/* <ImageDisplay people={ppfExecutiveCommittee} /> */}
 
         <h2>Executive Advisory Board</h2>
         <ImageDisplay people={executiveBoard} />

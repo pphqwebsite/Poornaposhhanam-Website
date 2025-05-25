@@ -1,5 +1,6 @@
 import React from "react";
 import ImageCarousel from "../components/ImageCarousel"; // Import the ImageCarousel component
+import ImageDisplay from "../components/ImageDisplay";
 
 export default function Home() {
   const images = [
@@ -46,17 +47,57 @@ export default function Home() {
     // ],
   ];
 
+  const logos = [
+    "/logos/sdg.jpeg",
+    "/logos/pa.jpeg",
+    "/logos/mca.jpeg"
+  ];
+
   return (
     <div>
       {/* Image Carousel Outside the Section */}
       <ImageCarousel images={images} />
 
       <section className="section-class">
-        <h1>Welcome to Poornaposhhanam Foundation</h1>
+        <h1 className="welcome-heading">Welcome to Poornaposhhanam Foundation</h1>
         <p>
           Driving sustainable development through knowledge, innovation, and
           community engagement.
         </p>
+
+        <ImageDisplay people={logos} simpleDisplay={true} />
+
+        <div className="message-section">
+          <h2>Founder's Message</h2>
+          <div className="message-content">
+            <p>
+              At Poornaposhhanam Foundation, we believe in the power of holistic development that combines ancient wisdom with modern scientific approaches. Our journey began with a vision to create sustainable change through education, research, and community engagement.
+            </p>
+            <p>
+              We are committed to empowering individuals and communities by promoting health, nutrition, and spiritual well-being. Through our various initiatives, we aim to bridge the gap between traditional knowledge and contemporary practices, creating a harmonious balance for sustainable growth.
+            </p>
+            <div className="message-signature">
+              - Dr. Bechan Sharma<br />
+              Founder, Poornaposhhanam Foundation
+            </div>
+          </div>
+        </div>
+
+        <div className="message-section">
+          <h2>Director's Message</h2>
+          <div className="message-content">
+            <p>
+              As we move forward in our mission, we remain focused on creating meaningful impact through research-driven initiatives and community-based programs. Our commitment to excellence and innovation drives us to continuously explore new avenues for sustainable development.
+            </p>
+            <p>
+              We invite you to join us in this journey of transformation, where together we can create a healthier, more sustainable future for generations to come. Your support and participation are invaluable in helping us achieve our vision of holistic well-being for all.
+            </p>
+            <div className="message-signature">
+              - Dr. Anand Kumar Tripathi<br />
+              Director, Poornaposhhanam Foundation
+            </div>
+          </div>
+        </div>
 
         <h3>News & Events</h3>
         <div className="news-marquee">

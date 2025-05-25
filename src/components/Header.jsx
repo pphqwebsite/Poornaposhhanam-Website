@@ -19,7 +19,10 @@ export default function Header() {
             />
           </Link>
           <Link to="/" className="org-name-link">
-            Poornaposhhanam Foundation
+            <img
+              src="/logos/cropped-title.jpeg"
+              alt="Poornaposhhanam Foundation"
+            />
           </Link>
         </div>
 

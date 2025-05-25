@@ -1,10 +1,30 @@
 import React from "react";
-import PeopleDisplay from "../components/PeopleDisplay";
+import ImageDisplay from "../components/ImageDisplay";
 
 export default function About() {
   const collaborators = [
     ["/people/raj.jpeg", "Shri Raj Rajeshwari Ved Pathshala"],
     ["/people/arpi.jpeg", "Ms. Arpi Shah"],
+  ];
+
+  const executiveBoard = [
+    ["/people/bs.jpeg", "Dr. Bechan Sharma", "Dean and Professor & Ex-Chairman, Faculty of Science and Department of Biochemistry, University of Allahabad, Prayagraj (U.P.)"],
+    ["/people/bsc.jpeg", "Dr. Bhagwan Singh Chaudhary", "Chairman & Head, Department of Geo Physics, Kurukshetra University, Kurukshetra (Haryana)"],
+    ["/people/dk.jpeg", "Dr. Digambar Kavitake", "Senior Scientist - R&D Division, Arjuna Naturals Pvt. Ltd, NIN – ICMR, Hyderabad"],
+    ["/people/akm.jpeg", "Dr. Anand Kumar Tripathi", "Director – National Heart Institute (International Relations), Principal Advisor – Swasth Bharat Abhiyan (Overseas), New Delhi"],
+  ];
+
+  const rndBoard = [
+    ["/people/dgrd.jpeg", "Dr. Giridharan Nappanvettil", "Ex-Senior Deputy Director, National Institute of Nutrition – ICMR, Palakkad (Kerala)"],
+    ["/people/uks.jpeg", "Dr. Uday Km. Sinha", "Additional Professor and Ex-Head, Dept. of Clinical Psychology, Child, Adolescent & Mental Health Unit, IBHAS, New Delhi"],
+    ["/people/dk.jpeg", "Dr. Digambar Kavitake", "Senior Scientist - R&D Division, Arjuna Naturals Pvt. Ltd, National Institute of Nutrition – ICMR, Hyderabad"],
+    ["/people/dummy.jpeg", "Dr. Halvi Ediger RamaRaju", "Associate Professor and Coordinator, Dept. of Obs. & Gyne. and Sexual Medicine Committee (FOGSI), Ballari Medical College and Research Center, Karnataka"],
+    ["/people/tj.jpeg", "Dr. Tanu Jain", "Assistant Professor, Dept. of Home Science, Dr. B. R. Ambedkar Govt. Degree College, Audenya Padaria, Mainpuri (U.P.)"],
+    ["/people/smk.jpeg", "Shri. Syed Mumtaz Karim", "HOD, Chief Dietician & Diabetes Expert, Dept. of Dietetics, MGM Mother & Child Hospital, Patna (Bihar)"],
+  ];
+
+  const expertPanel = [
+    ["/people/sgm.jpeg", "Shri Gyanendra Mishra", "Certified Sound Healing Therapist & Breath Work Expert, Rishikesh (Uttarakhand)"],
   ];
 
   return (
@@ -27,7 +47,7 @@ export default function About() {
       </div>
 
       <h2>Collaborators</h2>
-      <PeopleDisplay people={collaborators} />
+      <ImageDisplay people={collaborators} />
 
       <h2>Vision & Mission</h2>
       <p>
@@ -83,117 +103,13 @@ export default function About() {
         </p>
 
         <h2>Executive Advisory Board</h2>
-        <table>
-          <tr>
-            <td>Dr. Bechan Sharma</td>
-            <td>
-              <em>
-                Dean and Professor & Ex-Chairman, Faculty of Science and
-                Department of Biochemistry, University of Allahabad, Prayagraj
-                (U.P.)
-              </em>
-            </td>
-          </tr>
-          <tr>
-            <td>Dr. Bhagwan Singh Chaudhary</td>
-            <td>
-              <em>
-                Chairman & Head, Department of Geo Physics, Kurukshetra
-                University, Kurukshetra (Haryana)
-              </em>
-            </td>
-          </tr>
-          <tr>
-            <td>Dr. Digambar Kavitake</td>
-            <td>
-              <em>
-                Senior Scientist - R&D Division, Arjuna Naturals Pvt. Ltd, NIN –
-                ICMR, Hyderabad
-              </em>
-            </td>
-          </tr>
-          <tr>
-            <td>Dr. Anand Kumar Tripathi</td>
-            <td>
-              <em>
-                Director – National Heart Institute (International Relations),
-                Principal Advisor – Swasth Bharat Abhiyan (Overseas), New Delhi
-              </em>
-            </td>
-          </tr>
-        </table>
+        <ImageDisplay people={executiveBoard} />
 
         <h2>R&D Advisory Board</h2>
-        <table>
-          <tr>
-            <td>Dr. Giridharan Nappanvettil</td>
-            <td>
-              <em>
-                Ex-Senior Deputy Director, National Institute of Nutrition –
-                ICMR, Palakkad (Kerala)
-              </em>
-            </td>
-          </tr>
-          <tr>
-            <td>Dr. Uday Km. Sinha</td>
-            <td>
-              <em>
-                Additional Professor and Ex-Head, Dept. of Clinical Psychology,
-                Child, Adolescent & Mental Health Unit, IBHAS, New Delhi
-              </em>
-            </td>
-          </tr>
-          <tr>
-            <td>Dr. Digambar Kavitake</td>
-            <td>
-              <em>
-                Senior Scientist - R&D Division, Arjuna Naturals Pvt. Ltd,
-                National Institute of Nutrition – ICMR, Hyderabad
-              </em>
-            </td>
-          </tr>
-          <tr>
-            <td>Dr. Halvi Ediger RamaRaju</td>
-            <td>
-              <em>
-                Associate Professor and Coordinator, Dept. of Obs. & Gyne. and
-                Sexual Medicine Committee (FOGSI), Ballari Medical College and
-                Research Center, Karnataka
-              </em>
-            </td>
-          </tr>
-          <tr>
-            <td>Dr. Tanu Jain</td>
-            <td>
-              <em>
-                Assistant Professor, Dept. of Home Science, Dr. B. R. Ambedkar
-                Govt. Degree College, Audenya Padaria, Mainpuri (U.P.)
-              </em>
-            </td>
-          </tr>
-          <tr>
-            <td>Shri. Syed Mumtaz Karim</td>
-            <td>
-              <em>
-                HOD, Chief Dietician & Diabetes Expert, Dept. of Dietetics, MGM
-                Mother & Child Hospital, Patna (Bihar)
-              </em>
-            </td>
-          </tr>
-        </table>
+        <ImageDisplay people={rndBoard} />
 
         <h2>Expert Panel</h2>
-        <table>
-          <tr>
-            <td>Shri Gyanendra Mishra</td>
-            <td>
-              <em>
-                Certified Sound Healing Therapist & Breath Work Expert,
-                Rishikesh (Uttarakhand)
-              </em>
-            </td>
-          </tr>
-        </table>
+        <ImageDisplay people={expertPanel} />
 
         <h2>Departments</h2>
         <ul>

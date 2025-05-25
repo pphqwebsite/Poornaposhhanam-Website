@@ -3,7 +3,10 @@ import ImageCarousel from "../components/ImageCarousel"; // Import the ImageCaro
 
 export default function Home() {
   const images = [
-    ["/home-carousel/archery.jpeg", "Archery at the Sports Science Center"],
+    [
+      "/home-carousel/archery.jpeg",
+      "PPF team visit at India's 2nd largest sports training campus - Sports Authority of India",
+    ],
     [
       "/home-carousel/exercise.jpeg",
       "Sports Authority of India (Chh. Sambhajinagar, Maharashtra) Visit and Practical Training on Sports specific exercises for Nutrition Students",

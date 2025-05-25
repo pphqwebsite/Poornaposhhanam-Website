@@ -54,7 +54,7 @@ h3 {
 }
 
 .header-container {
-  padding: 0.5rem 2%;
+  padding: 0.5rem 0;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -76,7 +76,7 @@ h3 {
 }
 
 .logo-img {
-  height: 60px;
+  height: 150px;
   width: auto;
   object-fit: contain;
 }

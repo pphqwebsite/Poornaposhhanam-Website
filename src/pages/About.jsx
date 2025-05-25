@@ -7,6 +7,12 @@ export default function About() {
     ["/people/arpi.jpeg", "Ms. Arpi Shah"],
   ];
 
+  const ppfExecutiveCommittee = [
+    ["/people/dummy.jpeg", "Dummy Name 1", "Dummy Position 1"],
+    ["/people/dummy.jpeg", "Dummy Name 2", "Dummy Position 2"],
+    ["/people/dummy.jpeg", "Dummy Name 3", "Dummy Position 3"],
+  ];
+
   const executiveBoard = [
     ["/people/bs.jpeg", "Dr. Bechan Sharma", "Dean and Professor & Ex-Chairman, Faculty of Science and Department of Biochemistry, University of Allahabad, Prayagraj (U.P.)"],
     ["/people/bsc.jpeg", "Dr. Bhagwan Singh Chaudhary", "Chairman & Head, Department of Geo Physics, Kurukshetra University, Kurukshetra (Haryana)"],
@@ -101,6 +107,9 @@ export default function About() {
           growth. The foundation is dedicated to bringing about lasting positive
           changes through research, education, and community outreach.
         </p>
+
+        <h2>PPF Executive Committee</h2>
+        <ImageDisplay people={ppfExecutiveCommittee} />
 
         <h2>Executive Advisory Board</h2>
         <ImageDisplay people={executiveBoard} />

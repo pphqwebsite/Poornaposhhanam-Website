@@ -87,12 +87,44 @@ h3 {
   align-items: center;
   text-decoration: none;
   transition: opacity 0.2s ease;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.org-name-link img {
-  height: 60px;
+.org-name-link .title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.org-name-link .title-image {
+  height: 55px;
   width: auto;
   object-fit: contain;
+}
+
+.org-name-link .prag-image {
+  height: 25px;
+  width: auto;
+  object-fit: contain;
+}
+
+.org-name-link .header-logos {
+  display: flex;
+  gap: 0.8rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.org-name-link .header-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: white;
+  padding: 0.2rem;
+  border: 1px solid #1e3d2f;
 }
 
 .org-name-link:hover {
@@ -100,8 +132,22 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .org-name-link img {
+  .org-name-link .title-image {
+    height: 40px;
+  }
+  
+  .org-name-link .prag-image {
+    height: 20px;
+  }
+  
+  .org-name-link .header-logo {
+    width: 45px;
     height: 45px;
+  }
+  
+  .org-name-link .header-logos {
+    gap: 0.5rem;
+    padding: 0 1rem;
   }
 }
 

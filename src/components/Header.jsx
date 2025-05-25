@@ -7,6 +7,12 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showResources, setShowResources] = useState(false);
 
+  const headerLogos = [
+    "/logos/sdg.jpeg",
+    "/logos/pa.jpeg",
+    "/logos/mca.jpeg"
+  ];
+
   return (
     <header className="header">
       <div className="header-container">
@@ -19,10 +25,28 @@ export default function Header() {
             />
           </Link>
           <Link to="/" className="org-name-link">
-            <img
-              src="/logos/cropped-title.jpeg"
-              alt="Poornaposhhanam Foundation"
-            />
+            <div className="title-container">
+              <img
+                src="/logos/cropped-title.jpeg"
+                alt="Poornaposhhanam Foundation"
+                className="title-image"
+              />
+              <img
+                src="/logos/crop-prag.jpeg"
+                alt="Pragyanam Bhram"
+                className="prag-image"
+              />
+            </div>
+            <div className="header-logos">
+              {headerLogos.map((logo, index) => (
+                <img
+                  key={index}
+                  src={logo}
+                  alt={`Logo ${index + 1}`}
+                  className="header-logo"
+                />
+              ))}
+            </div>
           </Link>
         </div>
 

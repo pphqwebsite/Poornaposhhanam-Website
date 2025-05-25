@@ -1,6 +1,7 @@
 import React from "react";
 import ImageCarousel from "../components/ImageCarousel"; // Import the ImageCarousel component
 import ImageDisplay from "../components/ImageDisplay";
+import MarqueeComponent from "../components/MarqueeComponent";
 
 export default function Home() {
   const images = [
@@ -47,10 +48,13 @@ export default function Home() {
     // ],
   ];
 
-  const logos = [
-    "/logos/sdg.jpeg",
-    "/logos/pa.jpeg",
-    "/logos/mca.jpeg"
+  const newsItems = [
+    "Research partnership signed with IIT-BHU to study rural nutrition trends.",
+    "Poornaposhhanam hosts seminar on Climate-Resilient Farming in Varanasi.",
+    "Annual Community Health Survey begins across 3 districts this July.",
+    "Educational outreach program launched for underprivileged school children.",
+    "Foundation Day Celebration planned for August 2025 with guest lectures.",
+    "Publication of white paper on Holistic Rural Development now available."
   ];
 
   return (
@@ -65,8 +69,6 @@ export default function Home() {
           community engagement.
         </p>
 
-        <ImageDisplay people={logos} simpleDisplay={true} />
-        
         <div className="cin-number">CIN Number: XXXXXXXXXXXXX</div>
 
         <div className="message-section">
@@ -102,34 +104,7 @@ export default function Home() {
         </div>
 
         <h3>News & Events</h3>
-        <div className="news-marquee">
-          <div className="marquee-content">
-            <span className="news-item">
-              • Research partnership signed with IIT-BHU to study rural
-              nutrition trends.
-            </span>
-            <span className="news-item">
-              • Poornaposhhanam hosts seminar on Climate-Resilient Farming in
-              Varanasi.
-            </span>
-            <span className="news-item">
-              • Annual Community Health Survey begins across 3 districts this
-              July.
-            </span>
-            <span className="news-item">
-              • Educational outreach program launched for underprivileged school
-              children.
-            </span>
-            <span className="news-item">
-              • Foundation Day Celebration planned for August 2025 with guest
-              lectures.
-            </span>
-            <span className="news-item">
-              • Publication of white paper on Holistic Rural Development now
-              available.
-            </span>
-          </div>
-        </div>
+        <MarqueeComponent items={newsItems} />
 
         <h3>Become a Member</h3>
         <p>

@@ -13,6 +13,9 @@ export default function NewsDisplay({ items }) {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
   };
 
+  const currentItem = items[currentIndex];
+  const hasDescription = Array.isArray(currentItem) && currentItem.length > 1;
+
   return (
     <div className="news-display">
       <div className="news-carousel">
@@ -21,12 +24,16 @@ export default function NewsDisplay({ items }) {
         </button>
         
         <div className="carousel-content">
-          <img 
-            src={items[currentIndex].image} 
-            alt={items[currentIndex].description}
-            className="carousel-image"
-          />
-          <p className="carousel-description">{items[currentIndex].description}</p>
+          <div className="image-container">
+            <img 
+              src={Array.isArray(currentItem) ? currentItem[0] : currentItem} 
+              alt={hasDescription ? currentItem[1] : "News item"}
+              className="carousel-image"
+            />
+          </div>
+          {hasDescription && (
+            <p className="carousel-description">{currentItem[1]}</p>
+          )}
         </div>
 
         <button className="carousel-button next" onClick={nextSlide}>

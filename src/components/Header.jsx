@@ -10,7 +10,9 @@ export default function Header() {
   const headerLogos = [
     "/logos/sdg.jpeg",
     "/logos/pa.jpeg",
-    "/logos/mca.jpeg"
+    "/logos/mca.jpeg",
+    "/logos/anemia.jpeg",
+    "/logos/niti.jpeg"
   ];
 
   return (
@@ -50,61 +52,63 @@ export default function Header() {
           </Link>
         </div>
 
-        <div
-          className="nav-toggle"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? <FaTimes /> : <FaBars />}
-        </div>
-
-        <nav className={`nav-tabs ${mobileMenuOpen ? "open" : ""}`}>
-          <NavLink
-            to="/about"
-            className="nav-item"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            About Us
-          </NavLink>
-
+        <div className="nav-container">
           <div
-            className="nav-item dropdown"
-            onMouseEnter={() => setShowResources(true)}
-            onMouseLeave={() => setShowResources(false)}
-            onClick={() => setShowResources(!showResources)}
+            className="nav-toggle"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <span className="nav-item-text">Resources</span>
-            {showResources && (
-              <div className="dropdown-menu">
-                <NavLink to="/courses" onClick={() => setMobileMenuOpen(false)}>
-                  Courses
-                </NavLink>
-                <NavLink
-                  to="/training"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Training and Internships
-                </NavLink>
-                <NavLink
-                  to="/publications"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Publications
-                </NavLink>
-                <NavLink to="/rnd" onClick={() => setMobileMenuOpen(false)}>
-                  R&D
-                </NavLink>
-              </div>
-            )}
+            {mobileMenuOpen ? <FaTimes /> : <FaBars />}
           </div>
 
-          <NavLink
-            to="/contact"
-            className="nav-item"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Contact Us
-          </NavLink>
-        </nav>
+          <nav className={`nav-tabs ${mobileMenuOpen ? "open" : ""}`}>
+            <NavLink
+              to="/about"
+              className="nav-item"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About Us
+            </NavLink>
+
+            <div
+              className="nav-item dropdown"
+              onMouseEnter={() => setShowResources(true)}
+              onMouseLeave={() => setShowResources(false)}
+              onClick={() => setShowResources(!showResources)}
+            >
+              <span className="nav-item-text">Resources</span>
+              {showResources && (
+                <div className="dropdown-menu">
+                  <NavLink to="/courses" onClick={() => setMobileMenuOpen(false)}>
+                    Courses
+                  </NavLink>
+                  <NavLink
+                    to="/training"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Training and Internships
+                  </NavLink>
+                  <NavLink
+                    to="/publications"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Publications
+                  </NavLink>
+                  <NavLink to="/rnd" onClick={() => setMobileMenuOpen(false)}>
+                    R&D
+                  </NavLink>
+                </div>
+              )}
+            </div>
+
+            <NavLink
+              to="/contact"
+              className="nav-item"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact Us
+            </NavLink>
+          </nav>
+        </div>
       </div>
     </header>
   );

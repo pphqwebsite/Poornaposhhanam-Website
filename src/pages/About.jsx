@@ -14,15 +14,23 @@ export default function About() {
     ["/people/arpi.jpeg", "Ms. Arpi Shah"],
   ];
 
-  const researchCollaborators = [
-    ["/people/dummy.jpeg", "-"],
-    ["/people/dummy.jpeg", "-"],
+  const rndPartners = [
+    ["/rndPartners/vex.jpeg", "Vexido Publications"],
+    ["/rndPartners/consumera.jpeg", "Research Journal - Consumera"],
+    ["/rndPartners/med.jpeg", "MEDIVISTA - Journal of Medical & Health Sciences"],
+    ["/rndPartners/edu.jpeg", "EDUFORGE - Future Trends in Educational Innovation"],
+    ["/rndPartners/sus.jpeg", "SUSTAINA - Global Environmental Governance & Sustainability"],
+    ["/rndPartners/nut.jpeg", "NUTRA - Journal of Food Science & Technology"]
   ];
 
   const ppfExecutiveCommittee = [
-    ["/people/dummy.jpeg", "Dummy Name 1", "Dummy Position 1"],
-    ["/people/dummy.jpeg", "Dummy Name 2", "Dummy Position 2"],
-    ["/people/dummy.jpeg", "Dummy Name 3", "Dummy Position 3"],
+    ["/people/dks.jpeg", "Dr Knishka Siingh", "Founder - CEO - Poornaposhhanam Foundation"],
+    ["/people/shiv.jpeg", "Shivam Kumar Tiwari", "Co-Founder & Director - Poornaposhhanam Foundation"],
+    ["/people/dpo.jpeg", "Dr Pankaj Kumar Ojha, PhD", "Director & Head - External Relations & Policy Advocacy - Poornaposhhanam Foundation"],
+  ];
+
+  const teamSecretariat = [
+    ["/people/mks.jpeg", "Mrs Kalpana Singh", "Communication, Extension & Outreach Incharge"],
   ];
 
   const executiveBoard = [
@@ -36,7 +44,7 @@ export default function About() {
     ["/people/dgrd.jpeg", "Dr. Giridharan Nappanvettil", "Ex-Senior Deputy Director, National Institute of Nutrition – ICMR, Palakkad (Kerala)"],
     ["/people/uks.jpeg", "Dr. Uday Km. Sinha", "Additional Professor and Ex-Head, Dept. of Clinical Psychology, Child, Adolescent & Mental Health Unit, IBHAS, New Delhi"],
     ["/people/dk.jpeg", "Dr. Digambar Kavitake", "Senior Scientist - R&D Division, Arjuna Naturals Pvt. Ltd, National Institute of Nutrition – ICMR, Hyderabad"],
-    ["/people/dummy.jpeg", "Dr. Halvi Ediger RamaRaju", "Associate Professor and Coordinator, Dept. of Obs. & Gyne. and Sexual Medicine Committee (FOGSI), Ballari Medical College and Research Center, Karnataka"],
+    ["/people/drr.jpeg", "Dr. Halvi Ediger RamaRaju", "Associate Professor and Coordinator, Dept. of Obs. & Gyne. and Sexual Medicine Committee (FOGSI), Ballari Medical College and Research Center, Karnataka"],
     ["/people/tj.jpeg", "Dr. Tanu Jain", "Assistant Professor, Dept. of Home Science, Dr. B. R. Ambedkar Govt. Degree College, Audenya Padaria, Mainpuri (U.P.)"],
     ["/people/smk.jpeg", "Shri. Syed Mumtaz Karim", "HOD, Chief Dietician & Diabetes Expert, Dept. of Dietetics, MGM Mother & Child Hospital, Patna (Bihar)"],
   ];
@@ -71,10 +79,10 @@ export default function About() {
         </>
       )}
 
-      {hasNonDummyImages(researchCollaborators) && (
+      {hasNonDummyImages(rndPartners) && (
         <>
-          <h2>Research Collaborators</h2>
-          <ImageDisplay people={researchCollaborators} />
+          <h2>Partners in R&D and Publications</h2>
+          <ImageDisplay people={rndPartners} type="rnd-partner" />
         </>
       )}
 
@@ -135,6 +143,13 @@ export default function About() {
           <>
             <h2>PPF Executive Committee</h2>
             <ImageDisplay people={ppfExecutiveCommittee} />
+          </>
+        )}
+
+        {hasNonDummyImages(teamSecretariat) && (
+          <>
+            <h2>Team Secretariat</h2>
+            <ImageDisplay people={teamSecretariat} />
           </>
         )}
 

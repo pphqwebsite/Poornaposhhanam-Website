@@ -34,7 +34,7 @@ export default function Contact() {
         </a>
       </p>
 
-      <h3>Administrative Office</h3>
+      <h3>Administrative + Branch Office</h3>
       <p>
         Poornaposhanam Foundation
         <br />
@@ -48,15 +48,6 @@ export default function Contact() {
         <a href="mailto:poornaposhanamresearch@gmail.com">
           poornaposhanamresearch@gmail.com
         </a>
-      </p>
-
-      <h3>Branch Office</h3>
-      <p>
-        Poornaposhanam Foundation
-        <br />
-        Meerut (U.P.)
-        <br />
-        India
       </p>
 
       <h3>Account Details</h3>

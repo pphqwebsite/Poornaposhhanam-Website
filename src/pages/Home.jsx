@@ -49,7 +49,8 @@ export default function Home() {
   ];
 
   const newsItems = [
-    
+    ["/events/adapt.jpeg"],
+    ["/events/admon.jpeg"]
   ];
 
   return (
@@ -65,19 +66,18 @@ export default function Home() {
         </p>
 
         <div className="cin-number">CIN Number: U88900UP2024NPL210722</div>
+        <div className="cin-number">NITI Ayog Reg: UP/2025/0587979</div>
 
         <div className="message-section">
           <h2>Founder's Message</h2>
           <div className="message-content">
-            <p>
-              As the Founder-CEO, I welcome you to Poornaposhhanam Foundation. Our foundation believes in "Prajñānam Brahma" - knowledge as the path to ultimate truth. In these transformative times, when Bharat is emerging as a global leader, we are dedicated to re-establishing our deep-rooted culture and ancient Vedic knowledge systems.
-            </p>
-            <p>
-              Despite being a young organization, we have made significant impact through our scientifically-driven vision and practices. Our experienced team works with dedication and resilience, creating an environment that fosters sustainable growth and positive change. We continue our journey with a strong commitment to scientific work and the Sanatan knowledge system, driving impactful social, academic, and sustainable changes across the nation and globe.
-            </p>
-            <div className="message-signature">
-              - Dr. Knishka Siingh<br />
-              Founder & CEO, Poornaposhhanam Foundation
+            <img src="/msg/founder.jpeg" alt="Founder's Message" className="message-image" />
+            <div className="profile-image-container">
+              <img src="/people/dks.jpeg" alt="Dr. Knishka Siingh" className="profile-image" />
+              <div className="profile-signature">
+                - Dr. Knishka Siingh<br />
+                Founder & CEO, Poornaposhhanam Foundation
+              </div>
             </div>
           </div>
         </div>
@@ -85,15 +85,13 @@ export default function Home() {
         <div className="message-section">
           <h2>Director's Message</h2>
           <div className="message-content">
-            <p>
-              Welcome to Poornaposhhanam Foundation – Pragyanam Bhram, an organization dedicated to complete nourishment of body, mind, and soul. In this era of modern science and AI, we focus on blending ancient Vedic knowledge with contemporary scientific approaches to enhance biodiversity and human development.
-            </p>
-            <p>
-              As the first not-for-profit organization connecting Aerospace Nutrition and Cosmology with food, nutrition, and spirituality, we offer various courses, trainings, and research opportunities. Our foundation works at grassroots levels, from regular Ved-Parayan to practical exposure in sports and space nutrition, promoting innovations rooted in Indian knowledge systems.
-            </p>
-            <div className="message-signature">
-              - Acharya Shivam<br />
-              Director, Poornaposhhanam Foundation
+            <img src="/msg/director.jpeg" alt="Director's Message" className="message-image" />
+            <div className="profile-image-container">
+              <img src="/people/shiv.jpeg" alt="Acharya Shivam" className="profile-image" />
+              <div className="profile-signature">
+                - Acharya Shivam<br />
+                Director, Poornaposhhanam Foundation
+              </div>
             </div>
           </div>
         </div>
